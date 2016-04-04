@@ -2,7 +2,6 @@
   .make-motion(@className, @keyframeName);
   .@{className}-enter,
   .@{className}-appear {
-    transform: scale(0); // need this by yiminghe
     animation-timing-function: @ease-out-circ;
   }
   .@{className}-leave {
@@ -23,6 +22,7 @@
     transform: scale(0);
   }
   100% {
+    opacity: 1;
     transform: scale(1);
   }
 }
